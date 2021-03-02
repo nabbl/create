@@ -2,6 +2,8 @@
 
 # Unchained E-Commerce Scaffold
 
+commit
+
 ## Prerequisites
 
 - [Currently, you have to have Meteor installed locally](https://www.meteor.com/install).
@@ -27,7 +29,7 @@ Now you have a fully running Unchained E-Commerce environment running locally. C
 
 ### Interacting with Cockpit CMS localy
 
-If  you were able to complete the previous step with out any issue, you will have a local instance of unchained engine which you can
+If you were able to complete the previous step with out any issue, you will have a local instance of unchained engine which you can
 use for most of your e-commerce needs. However if your business needs more flexablity you can still integrate the engine with
 a content managment software easily.
 
@@ -125,11 +127,11 @@ nano -w .env
 
 | Environment variable     | Where to get and how to set?                                                                                                                                             |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `MAIL_URL`               | Use any smtp server that you have access to and correctly set it in connection url style like here: <https://nodemailer.com/smtp/>                                         |
+| `MAIL_URL`               | Use any smtp server that you have access to and correctly set it in connection url style like here: <https://nodemailer.com/smtp/>                                       |
 | `EMAIL_FROM`             | noreply@your-website.ch                                                                                                                                                  |
 | `EMAIL_WEBSITE_NAME`     | The Name of your Website                                                                                                                                                 |
-| `WEBSITE_DOMAIN`             | The Root domain of your website, like: your-website.ch                                                                                                                   |
-| `HTTP_METHOD`        | HTTP Method can be http or https                                                                                                                                         |
+| `WEBSITE_DOMAIN`         | The Root domain of your website, like: your-website.ch                                                                                                                   |
+| `HTTP_METHOD`            | HTTP Method can be http or https                                                                                                                                         |
 | `ADMIN_ACCESS_SECRET`    |  A random string, DANGER: if you don't set this env variable your whole system can be accessed via the default secret (is known by anybody who looks at the source code) |
 | `GETCOCKPIT_TOKEN`       | Token generated via the CMS UI (see Step 3), set later                                                                                                                   |
 | `DATATRANS_MERCHANT_ID`: | Datatrans Merchant ID (see Datatrans specific documentation below)                                                                                                       |
@@ -137,7 +139,7 @@ nano -w .env
 | `DATATRANS_SIGN_KEY`     | Datatrans Sign Key (see Datatrans specific documentation below)                                                                                                          |
 | `DATATRANS_API_ENDPOINT` | If not set, this will default to the sandbox endpoint, so please set to "https://api.datatrans.com"                                                                      |
 | `MONGO_VERSION`          | The MongoDB Version, use 4.2 if you're unsure                                                                                                                            |
-| `COOKIE_DOMAIN`          | The cookie domain, set to the domain the app is running on                                                                                                 |
+| `COOKIE_DOMAIN`          | The cookie domain, set to the domain the app is running on                                                                                                               |
 
 When all the parameters are set, you can run:
 
